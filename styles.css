@@ -82,6 +82,7 @@ body::before {
   
   button {
     border: none;
+    text-align: center;
   }
 
   button:hover {
@@ -153,6 +154,7 @@ body::before {
     }
   }
   
+
 
   .city-state-zip {
     display: flex;
@@ -339,7 +341,14 @@ fieldset {
   margin-left: 14px;
 }
 
-
+@media screen and (min-width: 480px) {
+  .hidden-mobile {
+    display: none;
+  }
+   .input-resize {
+    max-width: 65%;
+   }
+}
   .radio-text {
     display: inline-block;
   }
