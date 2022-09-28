@@ -94,17 +94,7 @@ body::before {
     margin: 3.125rem auto 3.125rem auto;
   }
   
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-  }
+
 
 
   
@@ -149,11 +139,7 @@ body::before {
     border-radius: 0.25rem;
   }
   
-  @media (min-width: 480px) {
-    form {
-      padding: 2.5rem;
-    }
-  }
+
   
 
 
@@ -171,10 +157,7 @@ body::before {
     transform: translateY(-35px);
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+
 
 .name-email-street {
     width: 100%;
@@ -342,14 +325,7 @@ fieldset {
   margin-left: 14px;
 }
 
-@media (min-width: 480px) {
-  .hidden-mobile {
-    display: none;
-  }
-   .input-resize {
-    max-width: 65%;
-   }
-}
+
   .radio-text {
     display: inline-block;
   }
@@ -369,7 +345,7 @@ fieldset {
     resize: vertical;
   }
   
-  .submit-button {
+  /* .submit-button {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -377,7 +353,7 @@ fieldset {
     color: inherit;
     border-radius: 2px;
     cursor: pointer;
-  }
+  } */
 
 a {
   text-decoration: none;
@@ -408,6 +384,7 @@ a:hover {
 button {
   display: block;
   width: 18%;
+  margin-top: 1.5rem;
   padding: 0.65rem;
   background: rgb(227,113,20);
   color: inherit;
@@ -451,25 +428,7 @@ button {
   background-size: 28%;
   }
   
-  @media (max-width: 1405px) {
-    .containeryes {
-      background: none;
-      min-width: 100% !important;
 
-    }
-
-  }
-
-  @media (max-width: 1405px) {
-    #logo {
-      max-width: 400px;
-      min-width: 10px;
-      margin-top: 19px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-  }
 
 /* @media (max-width: 500px) {
 
@@ -482,13 +441,7 @@ a img {
 } */
 
 
-@media (min-width: 1405px) {
-  #logo {
-    width: 400px;
-    float: left;
-    margin-top: 19px;
-}
-}
+
 
     
   .ayes {
@@ -516,4 +469,65 @@ img {
 img {
     display: inline-block;
     vertical-align: middle;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+
+}
+
+@media (max-width: 1405px) {
+  .containeryes {
+    background: none;
+    min-width: 100% !important;
+
+  }
+
+}
+
+@media (max-width: 1405px) {
+  #logo {
+    max-width: 400px;
+    min-width: 10px;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+@media (min-width: 1405px) {
+  #logo {
+    width: 400px;
+    float: left;
+    margin-top: 19px;
+}
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+   .input-resize {
+    max-width: 65%;
+   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
