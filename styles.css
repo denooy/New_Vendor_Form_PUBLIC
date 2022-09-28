@@ -131,7 +131,8 @@ body::before {
 
   legend {
       font-size: 1.6rem;
-      text-align: center;     
+      text-align: center; 
+      margin: 0 auto;    
   }
 
   .legend {
@@ -341,7 +342,7 @@ fieldset {
   margin-left: 14px;
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 480px) {
   .hidden-mobile {
     display: none;
   }
@@ -388,6 +389,18 @@ a {
 }
 }
 
+/* @media screen and (-moz-images-in-menus: 0) {
+  fieldset {
+    position: relative;
+  }
+  fieldset>legend {
+    position: absolute;
+    left: 50%;
+    top: -12px; /* depends on font size and border */
+    /* background: white; depends on background */
+    /* transform: translate(-50%, 0); */
+  /* }
+} */ 
 a:hover {
   color: rgb(219, 215, 215);
 }
