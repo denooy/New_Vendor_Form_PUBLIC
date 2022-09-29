@@ -522,9 +522,9 @@ img {
   .hidden-mobile {
     display: none;
   }
-   .input-resize {
+   .form-control-stock {
     max-width: 65%;
-   }
+  }
 }
 
 @keyframes fadeIn {
