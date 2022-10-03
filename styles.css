@@ -61,6 +61,7 @@ body::before {
   p {
     margin-top: 0;
     margin-bottom: 0.5rem;
+    min-width: 200px;
   }
   
   label {
@@ -94,9 +95,6 @@ body::before {
     margin: 3.125rem auto 3.125rem auto;
   }
   
-
-
-
   
   .header {
     padding: 0 0.625rem;
@@ -139,10 +137,6 @@ body::before {
     border-radius: 0.25rem;
   }
   
-
-  
-
-
   .city-state-zip {
     display: flex;
     padding-bottom: 40px;
@@ -156,7 +150,6 @@ body::before {
     animation: fadeIn 1s;
     transform: translateY(-35px);
 }
-
 
 
 .name-email-street {
@@ -345,15 +338,6 @@ fieldset {
     resize: vertical;
   }
   
-  /* .submit-button {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    background: var(--color-green);
-    color: inherit;
-    border-radius: 2px;
-    cursor: pointer;
-  } */
 
 a {
   text-decoration: none;
@@ -365,18 +349,7 @@ a {
 }
 }
 
-/* @media screen and (-moz-images-in-menus: 0) {
-  fieldset {
-    position: relative;
-  }
-  fieldset>legend {
-    position: absolute;
-    left: 50%;
-    top: -12px; /* depends on font size and border */
-    /* background: white; depends on background */
-    /* transform: translate(-50%, 0); */
-  /* }
-} */ 
+
 a:hover {
   color: rgb(219, 215, 215);
 }
@@ -428,22 +401,7 @@ button {
   background-size: 28%;
   }
   
-
-
-/* @media (max-width: 500px) {
-
-    /* .containeryes {
-  background: url('https://www.trick-tools.com/static/images/new/trick-tools-mobile-logo.png') center top no-repeat;
-  background-size: 50%;
-}
-a img {
-  display: none;
-} */
-
-
-
-
-    
+   
   .ayes {
       line-height: 1;
       box-sizing: border-box;
