@@ -225,7 +225,7 @@
                 <p class="location2">Do you ship from an additional location?</p>
                  <label>
                     <input 
-                      name=""
+                      name="Additional&nbsp;Ship&nbsp;To"
                       id="noCheck"
                       type="radio"
                       value="yes"
@@ -251,7 +251,7 @@
                           <label id="name-label" for="address1-name">Street Address</label>
                               <input 
                               type="text" 
-                              name="address1-name" 
+                              name="Street&nbsp;Address&nbsp;#2" 
                               class="form-control" 
                               >                
                           </div>
@@ -259,7 +259,7 @@
                         <label id="name-label" for="address2-name">Unit/Suite</label>
                             <input 
                             type="text" 
-                            name="address2-name" 
+                            name="Unit/Suite&nbsp;#2" 
                             class="form-control">                
                     </div>
                   </div>
@@ -268,13 +268,13 @@
                         <label id="name-label" for="city">City</label>
                             <input 
                             type="text" 
-                            name="city" 
+                            name="City&nbsp;#2" 
                             class="form-control" 
                             >                
                     </div>
                     <div class="vendor-group left-column">
                         <label id="name-label" for="state">State </label>
-                        <select id="state" name="state" class="form-control">
+                        <select id="state" name="State&nbsp;#2" class="form-control">
                             <option value="">Select One</option>
                             <optgroup label="U.S. States/Territories">
                                 <option value="AK">Alaska</option>
@@ -355,14 +355,14 @@
                               <label id="name-label" for="zip">Zip Code</label>
                               <input 
                                   type="text" 
-                                  name="zip" 
+                                  name="Zip&nbsp;#2" 
                                   class="form-control" 
                                   pattern="[0-9]{5}" 
                                   >         
                               </div>
                               <div class="vendor-group left-column">
                                   <label id="name-label" for="state">Country</label>
-                                  <select id="drop-down" class="form-control" required>  
+                                  <select id="drop-down" name="Country&nbsp;#2" class="form-control" required>  
                                       <option value="">Select One</option>
                                       <option value="USA" selected>United States</option>
                                       <option value="CA">Canada</option>
@@ -394,8 +394,8 @@
                 </p>
                 <label
                 ><input
-                  name="prefer"
-                  value="dropship"
+                  name="USA&nbsp;Dropship"
+                  value="usa-ship"
                   type="checkbox"
                   class="input-checkbox"               
                   onclick="toggle_visibility('dropship');"
@@ -403,9 +403,9 @@
               >
               <label>
                 <input
-                  name="prefer"
+                  name="Canada&nbsp;Dropship"
                   id="canadaship"
-                  value="ship-to-canada"
+                  value="canada-ship"
                   type="checkbox"
                   class="input-checkbox"
                 />Drop ship to Canada</label
@@ -413,7 +413,7 @@
               <p id="canada" style="display:none" class="international"><i>NOTE: International fees/taxes must bill to the RECEIVER</i></p>
               <label
                 ><input
-                  name="prefer"
+                  name="International&nbsp;Dropship"
                   id="internationalship"
                   value="ship-overseas"
                   type="checkbox"
@@ -425,7 +425,7 @@
               <label
               ><input
                 id="upsacct"
-                name="ups"
+                name="Ship&nbsp;UPS"
                 value="1"
                 type="checkbox"
                 class="input-checkbox"
@@ -433,7 +433,7 @@
               />Dealer's UPS account</label>
               <label
                 ><input
-                  name="ups"
+                  name="Ship&nbsp;on&nbsp;Trick-Tools&nbsp;Account"
                   value="2"
                   type="checkbox"
                   class="input-checkbox"
@@ -442,7 +442,7 @@
               >
               <label
                 ><input
-                  name="prefer"
+                  name="Ship&nbsp;FedEx"
                   value="fedex"
                   type="checkbox"
                   class="input-checkbox"
@@ -450,7 +450,7 @@
               >
               <label
                 ><input
-                  name="prefer"
+                  name="Ship&nbsp;USPS"
                   value="usps"
                   type="checkbox"
                   class="input-checkbox"
@@ -461,7 +461,7 @@
                 <label
                   ><input
                     id="ltl"
-                    name="ltlshipments"
+                    name="OK&nbsp;to&nbsp;Book&nbsp;Freight"
                     value="ltl"
                     type="checkbox"
                     class="input-checkbox"
@@ -472,7 +472,7 @@
                 <label
                 ><input
                   id="scale"
-                  name="ltlshipments"
+                  name="Scale&nbsp;Reading&nbsp;Used"
                   value="usps"
                   type="checkbox"
                   class="input-checkbox"
@@ -482,7 +482,7 @@
             <label for="carrierlist">
               <input type="checkbox" 
                      id="carrierlist" 
-                     name="ltlshipments"
+                     name="Restricted&nbsp;Carriers"
                      class="input-checkbox"/>
                   Do not use certain carriers
             </label>
@@ -493,6 +493,7 @@
                       <label id="approvedcarriers" for="carriers">Restricted Carriers</label>
                       <input
                         id="txtPassportNumber"
+                        name="List&nbsp;of&nbsp;Restricted&nbsp;Carriers"
                         type="text"
                         class="form-control"
                         placeholder="Estes, SAIA, etc."
@@ -504,7 +505,7 @@
                                 <label for="flatbedshipments"
                                   ><input
                                     id="flatbed"
-                                    name="prefer"
+                                    name="Flatbed&nbsp;Shipments"
                                     value="flatbed"
                                     type="checkbox"
                                     class="input-checkbox"
@@ -523,7 +524,7 @@
                 <label id="name-label" for="email">Where can we send Purchase Orders?</label>
                     <input 
                     type="email"
-                    name="email"
+                    name="E-mail&nbsp;for&nbsp;POs"
                     class="form-control-order"
                     placeholder="orders@vendor.com">
                
@@ -536,7 +537,7 @@
                 <p>Drop ship minimum order value?</p>
                 <div class="vendor-group-stock"><label>
                     <input 
-                      name="dropship-min"
+                      name="Dropship&nbsp;Minimum"
                       type="radio"
                       id="dropship-no-amount"
                       value="no"
@@ -546,7 +547,7 @@
                 </label>
                 <label>
                     <input 
-                      name="dropship-min"
+                      name="Dropship&nbsp;Minimum"
                       id="dropship-yes-amount"
                       type="radio"
                       value="yes"
@@ -559,7 +560,7 @@
                 <label for="dropship-amount" class="stock-label hidden-mobile">Drop Ship</label>
                     <input 
                            type="text"
-                           name="dropship-amount"
+                           name="Dropship&nbsp;Minimum&nbsp;Amount"
                            class="form-control-stock" 
                            placeholder="$0.00">                
                  </div>
@@ -573,7 +574,7 @@
                   <div class="vendor-group-stock"><label>
                       <input 
                         id="stock-no"
-                        name="stockship-min"
+                        name="Stock&nbsp;Minimum"
                         type="radio"
                         value="no"
                         class="input-radio-orderinfo indent"
@@ -583,7 +584,7 @@
               <label>
                   <input 
                     id="stock-yes"
-                    name="stockship-min"
+                    name="Stock&nbsp;Minimum"
                     type="radio"
                     value="yes"
                     class="input-radio-orderinfo indent"/>
@@ -594,7 +595,7 @@
                  <label id="stock-amount" for="stock-amount" class="stock-label hidden-mobile">Stock</label>
                      <input 
                      type="text"
-                     name="stock-amount" 
+                     name="Stock&nbsp;Minimum&nbsp;Amount" 
                      class="form-control-stock"
                      placeholder="$0.00">                
                </div>
@@ -608,7 +609,7 @@
               <div class="vendor-group-stock"><label>
                   <input 
                     id="stock-no1"
-                    name="stockship-min1"
+                    name="Free&nbsp;Freight"
                     type="radio"
                     value="no"
                     class="input-radio-orderinfo indent"
@@ -618,7 +619,7 @@
               <label>
                   <input 
                     id="stock-yes1"
-                    name="stockship-min1"
+                    name="Free&nbsp;Freight"
                     type="radio"
                     value="yes"
                     class="input-radio-orderinfo indent"/>
@@ -629,7 +630,7 @@
                 <label id="free-amount" for="free-amount" class="stock-label hidden-mobile">Free Freight</label>
                     <input 
                     type="text"
-                    name="free-amount" 
+                    name="Free&nbsp;Freight&nbsp;Amount" 
                     class="form-control-stock"
                     placeholder="$0.00">                
               </div>
@@ -643,7 +644,7 @@
           <div class="name-email-street">
             <div class="dealer-margin">
               <label id="name-label" for="percentage">Dealer Margin</label>
-              <select id="percentage" name="percentage" class="form-control-order">  
+              <select id="percentage" name="Margin&nbsp;Percentage" class="form-control-order">  
                 <option value="">Select One</option>
                 <option value="15">15%</option>
                 <option value="20">20%</option>
@@ -666,8 +667,8 @@
         <div class="vendor-groupdrop">
         <label
         ><input
-          name="prefer"
-          value="fedex"
+          name="Advance&nbsp;Notice&nbsp;of&nbsp;Price&nbsp;Changes"
+          value="price-change-notice"
           type="checkbox"
           class="input-checkbox"
         />Can provide 10 or more days advance notice of price changes</label
@@ -675,12 +676,12 @@
           </fieldset>
           <div class="vendor-group">
             <label for="notes">Special Notes</label>
-             <textarea id="comments" class="input-textarea" name="comment" placeholder="Additional contacts or important notes..."></textarea>
+             <textarea id="comments" class="input-textarea" name="Comments&nbsp;and&nbsp;Notes" placeholder="Additional contacts or important notes..."></textarea>
        </div>
           <div class="vendor-group"> 
             <label for="agree">
               <input
-              name="agree"
+              name="Agree&nbsp;To&nbsp;Terms"
               value="terms"
               type="checkbox"
               class="input-checkbox"
