@@ -409,7 +409,7 @@
                 <input
                   name="Canada&nbsp;Dropship"
                   id="canadaship"
-                  value="canada-ship"
+                  value="Yes"
                   type="checkbox"
                   class="input-checkbox"
                 />Drop ship to Canada</label
@@ -419,7 +419,7 @@
                 ><input
                   name="International&nbsp;Dropship"
                   id="internationalship"
-                  value="ship-overseas"
+                  value="Yes"
                   type="checkbox"
                   class="input-checkbox"
                 />Drop ship overseas</label
@@ -447,7 +447,7 @@
               <label
                 ><input
                   name="Ship&nbsp;FedEx"
-                  value="fedex"
+                  value="Yes"
                   type="checkbox"
                   class="input-checkbox"
                 />FedEx</label
@@ -455,7 +455,7 @@
               <label
                 ><input
                   name="Ship&nbsp;USPS"
-                  value="usps"
+                  value="Yes"
                   type="checkbox"
                   class="input-checkbox"
                 />USPS</label
@@ -466,7 +466,7 @@
                   ><input
                     id="ltl"
                     name="OK&nbsp;to&nbsp;Book&nbsp;Freight"
-                    value="ltl"
+                    value="Yes"
                     type="checkbox"
                     class="input-checkbox"
                     onClick="javascript:uncheckScale(this); javascript:uncheckCarriers(this);"
@@ -477,7 +477,7 @@
                 ><input
                   id="scale"
                   name="Scale&nbsp;Reading&nbsp;Used"
-                  value="usps"
+                  value="Yes"
                   type="checkbox"
                   class="input-checkbox"
                 />Scale reading used to determine gross weight</label
@@ -487,6 +487,7 @@
               <input type="checkbox" 
                      id="carrierlist" 
                      name="Restricted&nbsp;Carriers"
+                     value="Yes"
                      class="input-checkbox"/>
                   Do not use certain carriers
             </label>
@@ -510,7 +511,7 @@
                                   ><input
                                     id="flatbed"
                                     name="Flatbed&nbsp;Shipments"
-                                    value="flatbed"
+                                    value="Attached&nbsp;to&nbsp;form"
                                     type="checkbox"
                                     class="input-checkbox"
                                     />Upload list of&nbsp;<i>flatbed only</i>&nbsp;machines</label>   
@@ -544,7 +545,7 @@
                       name="Dropship&nbsp;Minimum"
                       type="radio"
                       id="dropship-no-amount"
-                      value="no"
+                      value="No"
                       class="input-radio-orderinfo indent"
                       checked/>
                       No
@@ -554,7 +555,7 @@
                       name="Dropship&nbsp;Minimum"
                       id="dropship-yes-amount"
                       type="radio"
-                      value="yes"
+                      value="Yes"
                       class="input-radio-orderinfo indent"/>
                      Yes
                 </label>
@@ -580,7 +581,7 @@
                         id="stock-no"
                         name="Stock&nbsp;Minimum"
                         type="radio"
-                        value="no"
+                        value="No"
                         class="input-radio-orderinfo indent"
                         checked/>
                         No
@@ -590,7 +591,7 @@
                     id="stock-yes"
                     name="Stock&nbsp;Minimum"
                     type="radio"
-                    value="yes"
+                    value="Yes"
                     class="input-radio-orderinfo indent"/>
                    Yes
               </label>
@@ -615,7 +616,7 @@
                     id="stock-no1"
                     name="Free&nbsp;Freight"
                     type="radio"
-                    value="no"
+                    value="No"
                     class="input-radio-orderinfo indent"
                     checked/>
                     No
@@ -625,7 +626,7 @@
                     id="stock-yes1"
                     name="Free&nbsp;Freight"
                     type="radio"
-                    value="yes"
+                    value="Yes"
                     class="input-radio-orderinfo indent"/>
                   Yes
               </label>
@@ -650,15 +651,15 @@
               <label id="name-label" for="percentage">Dealer Margin</label>
               <select id="percentage" name="Margin&nbsp;Percentage" class="form-control-order">  
                 <option value="">Select One</option>
-                <option value="15">15%</option>
-                <option value="20">20%</option>
-                <option value="25">25%</option>
-                <option value="30">30%</option>
-                <option value="35">35%</option>
-                <option value="40">40%</option>
-                <option value="45">45%</option>              
-                <option value="50">50%</option>
-                <option value="varies"> Varies, See Notes</option>
+                <option value="15%">15%</option>
+                <option value="20%">20%</option>
+                <option value="25%">25%</option>
+                <option value="30%">30%</option>
+                <option value="35%">35%</option>
+                <option value="40%">40%</option>
+                <option value="45%">45%</option>              
+                <option value="50%">50%</option>
+                <option value="Varies&nbsp;See&nbsp;Notes"> Varies, See Notes</option>
                
               </optgroup>
             </select>
@@ -672,7 +673,7 @@
         <label
         ><input
           name="Advance&nbsp;Notice&nbsp;of&nbsp;Price&nbsp;Changes"
-          value="price-change-notice"
+          value="Yes,&nbsp;10&nbsp;Days&nbsp;Minimum"
           type="checkbox"
           class="input-checkbox"
         />Can provide 10 or more days advance notice of price changes</label
@@ -686,7 +687,7 @@
             <label for="agree">
               <input
               name="Agree&nbsp;To&nbsp;Terms"
-              value="terms"
+              value="Vendor&nbsp;Agreement&nbsp;Accepted"
               type="checkbox"
               class="input-checkbox"
               required
