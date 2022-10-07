@@ -24,7 +24,7 @@
             <h1 class="text-center">New Vendor Form</h1>
             <p class="description text-center">Thank you for supplying next level tools!</p>
         </header>
-        <form action="https://formsubmit.co/d89508fc32783a7beb86eb73969a63d5" method="POST">
+        <form action="https://formsubmit.co/d89508fc32783a7beb86eb73969a63d5" method="POST" enctype="multipart/form-data">
             <h2 class="legend">Main Information</h2>
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_subject" value="New Vendor Submitted">
@@ -517,7 +517,7 @@
 <!--------------------- BEGIN REVEAL IF ACTIVE HTML --------------------->
                   <div id="flatbedlist" style="display: none" class="vendor-group reveal-if-active"> 
                     <label id="flatbedshipments" for="flatbed"></label>          
-                  <input id="txtPassportNumber" type="file" name="filename">
+                  <input id="txtPassportNumber" type="file" accept=".csv, .pdf" name="Flatbed&nbsp;Only&nbsp;Products">
                   </div>
 <!--------------------- END REVEAL IF ACTIVE HTML --------------------->
             </fieldset>
@@ -666,7 +666,7 @@
           </div>
           <div class="dealer-margin">
           <p>Upload Current Pricelist</p>
-          <input type="file" id="pricelist" name="filename">
+          <input type="file" accept=".csv, .pdf" id="pricelist" name="Pricelist">
         </div>
         <div class="vendor-groupdrop">
         <label
