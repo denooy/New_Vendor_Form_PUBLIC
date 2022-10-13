@@ -37,6 +37,7 @@ function toggle(source) {
   		document.getElementById("carrierlist").checked = false;
   	}
   }
+  
 
   $(document).ready(function() {    
     $("#canadaship").click(function(){
@@ -81,4 +82,26 @@ function toggle(source) {
     $("#dropship-yes-amount").click(function(){
     $("#dropship-amount").show('fast');
   });
+});
+
+$(document).ready(function(){
+  $("input[name='warehouse']").live("change", function(){
+      if ($(this).val() == "A") {
+           $("input#street-hide").attr("name", "");               
+           $("input#unit-hide").attr("name", "");             
+           $("input#city-hide").attr("name", "");
+           $("input#state-hide").attr("name", "");
+           $("input#zip-hide").attr("name", "");
+           $("input#country-hide").attr("name", "");                  
+      }
+      else if ($(this).val() == "B") {
+           $("input#street-hide").attr("name", "Street");               
+           $("input#unit-hide").attr("name", "Unit");             
+           $("input#city-hide").attr("name", "City");
+           $("input#state-hide").attr("name", "State");
+           $("input#zip-hide").attr("name", "Zip");
+           $("input#country-hide").attr("name", "Country");
+                 
+      }
+  }); 
 });

@@ -237,20 +237,20 @@
                 <p class="location2">Do you ship from an additional location?</p>
                  <label>
                     <input 
-                      name="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additional&nbsp;Ship&nbsp;To"
+                      name="warehouse"
                       id="noCheck"
                       type="radio"
-                      value="No"
+                      value="A"
                       class="input-radio"
                       checked/>
                      No
                 </label>
                 <label>
                     <input 
-                      name="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additional&nbsp;Ship&nbsp;To"
+                      name="warehouse"
                       id="yesCheck"
                       type="radio"
-                      value="Yes"
+                      value="B"
                       class="input-radio"
                       />
                       Yes
@@ -263,7 +263,8 @@
                           <label id="name-label" for="address1-name">Street Address</label>
                               <input 
                               type="text" 
-                              name="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Street&nbsp;Address&nbsp;#2" 
+                              id="street-hide"
+                              name="" 
                               class="form-control" 
                               >                
                           </div>
@@ -271,7 +272,8 @@
                         <label id="name-label" for="address2-name">Unit/Suite</label>
                             <input 
                             type="text" 
-                            name="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit/Suite&nbsp;#2" 
+                            id="unit-hide"
+                            name="" 
                             class="form-control">                
                     </div>
                   </div>
@@ -279,14 +281,15 @@
                     <div class="vendor-group right-column">
                         <label id="name-label" for="city">City</label>
                             <input 
-                            type="text" 
-                            name="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City&nbsp;#2" 
+                            type="text"
+                            id="city-hide" 
+                            name="" 
                             class="form-control" 
                             >                
                     </div>
                     <div class="vendor-group left-column">
                         <label id="name-label" for="state">State </label>
-                        <select id="state" name="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State&nbsp;#2" class="form-control">
+                        <select id="state-hide" name="" class="form-control">
                             <option value="">Select One</option>
                             <optgroup label="U.S. States/Territories">
                                 <option value="AK">Alaska</option>
@@ -367,14 +370,15 @@
                               <label id="name-label" for="zip">Zip Code</label>
                               <input 
                                   type="text" 
-                                  name="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zip&nbsp;#2" 
+                                  id="zip-hide"
+                                  name="" 
                                   class="form-control" 
                                   pattern="[0-9]{5}" 
                                   >         
                               </div>
                               <div class="vendor-group left-column">
                                   <label id="name-label" for="state">Country</label>
-                                  <select id="drop-down" name="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Country&nbsp;#2" class="form-control" required>  
+                                  <select id="country-hide" name="" class="form-control" required>  
                                       <option value="">Select One</option>
                                       <option value="USA" selected>United States</option>
                                       <option value="CA">Canada</option>
