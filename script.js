@@ -1,5 +1,10 @@
 function addressFunction() {
-  document.getElementById("street-hide").setAttribute("name", "Street987"); 
+  document.getElementById("street-hide").setAttribute("name", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Street");
+  document.getElementById("unit-hide").setAttribute("name", "Ste/Unit"); 
+  document.getElementById("city-hide").setAttribute("name", "City"); 
+  document.getElementById("state-hide").setAttribute("name", "State"); 
+  document.getElementById("zip-hide").setAttribute("name", "Zip");
+  document.getElementById("country-hide").setAttribute("name", "Country"); 
 }
 
 function toggle(source) {
@@ -88,25 +93,25 @@ function toggle(source) {
   });
 });
 
-$(document).ready(function(){
-  $("input[name='warehouse']").live("change", function(){
-     if ($(this).val() == "B") {
-      $("input#street-hide").attr("name", "Street");               
-      $("input#unit-hide").attr("name", "Unit");             
-      $("input#city-hide").attr("name", "City");
-      $("input#state-hide").attr("name", "State");
-      $("input#zip-hide").attr("name", "Zip");
-      $("input#country-hide").attr("name", "Country");                     
-      }
-      else if ($(this).val() == "A") {
-        $("input#street-hide").attr("name", "");               
-        $("input#unit-hide").attr("name", "");             
-        $("input#city-hide").attr("name", "");
-        $("input#state-hide").attr("name", "");
-        $("input#zip-hide").attr("name", "");
-        $("input#country-hide").attr("name", "");                    
-      }
-  }); 
-});
+// $(document).ready(function(){
+//   $("input[name='warehouse']").live("change", function(){
+//      if ($(this).val() == "B") {
+//       $("input#street-hide").attr("name", "Street");               
+//       $("input#unit-hide").attr("name", "Unit");             
+//       $("input#city-hide").attr("name", "City");
+//       $("input#state-hide").attr("name", "State");
+//       $("input#zip-hide").attr("name", "Zip");
+//       $("input#country-hide").attr("name", "Country");                     
+//       }
+//       else if ($(this).val() == "A") {
+//         $("input#street-hide").attr("name", "");               
+//         $("input#unit-hide").attr("name", "");             
+//         $("input#city-hide").attr("name", "");
+//         $("input#state-hide").attr("name", "");
+//         $("input#zip-hide").attr("name", "");
+//         $("input#country-hide").attr("name", "");                    
+//       }
+//   }); 
+// });
 
 
