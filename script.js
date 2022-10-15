@@ -7,9 +7,6 @@ function addressFunction() {
   document.getElementById("country-hide").setAttribute("name", "Country"); 
 }
 
-function warehouseFunction() {
-  document.getElementById("yesCheck").setAttribute("name", "*****WAREHOUSE#2*****")
-}
 
 function toggle(source) {
     checkboxes = document.getElementsByName('ups');
