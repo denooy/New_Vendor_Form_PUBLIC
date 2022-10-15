@@ -1,10 +1,14 @@
 function addressFunction() {
-  document.getElementById("street-hide").setAttribute("name", "Street&nbsp;Address");
+  document.getElementById("street-hide").setAttribute("name", "Street");
   document.getElementById("unit-hide").setAttribute("name", "Unit/Suite"); 
   document.getElementById("city-hide").setAttribute("name", "City"); 
   document.getElementById("state-hide").setAttribute("name", "State"); 
   document.getElementById("zip-hide").setAttribute("name", "Zip");
   document.getElementById("country-hide").setAttribute("name", "Country"); 
+}
+
+function warehouseFunction() {
+  document.getElementById("yesCheck").setAttribute("name", "*****WAREHOUSE#2*****")
 }
 
 function toggle(source) {
