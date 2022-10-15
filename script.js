@@ -1,5 +1,5 @@
 function addressFunction() {
-  document.getElementById("street-hide").setAttribute("name", "Street Address");
+  document.getElementById("street-hide").setAttribute("name", "Street&nbsp;Address");
   document.getElementById("unit-hide").setAttribute("name", "Unit/Suite"); 
   document.getElementById("city-hide").setAttribute("name", "City"); 
   document.getElementById("state-hide").setAttribute("name", "State"); 
