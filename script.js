@@ -20,6 +20,22 @@ function carrierFunction() {
   document.getElementById("restrictedcarriers").setAttribute("name", "Restricted-Carriers");
 }
 
+function dropshipminFunction() {
+  document.getElementById("dropship-no-amount").setAttribute("value", "No");
+}
+
+function dropshipFunction() {
+  document.getElementById("dropshipamount").setAttribute("name", "Dropship-Minimum-Amount");
+}
+
+function stockFunction() {
+  document.getElementById("stockamount").setAttribute("name", "Stock-Minimum-Amount");
+}
+
+function freefreightFunction() {
+  document.getElementById("freefreight").setAttribute("name", "Free-Freight-Minimum-Amount");
+}
+
 function toggle(source) {
     checkboxes = document.getElementsByName('ups');
     for(var i=0, n=checkboxes.length;i<n;i++) {

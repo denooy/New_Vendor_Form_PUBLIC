@@ -583,7 +583,8 @@
                       id="dropship-yes-amount"
                       type="radio"
                       value="Yes"
-                      class="input-radio-orderinfo indent"/>
+                      class="input-radio-orderinfo indent"
+                      onclick="dropshipFunction()"/>
                      Yes
                 </label>
             
@@ -592,7 +593,8 @@
                 <label for="dropship-amount" class="stock-label hidden-mobile">Drop Ship</label>
                     <input 
                            type="text"
-                           name="Dropship&nbsp;Minimum&nbsp;Amount"
+                           id="dropshipamount"
+                           name=""
                            class="form-control-stock" 
                            placeholder="$0.00">                
                  </div>
@@ -619,7 +621,8 @@
                     name="Stock&nbsp;Minimum"
                     type="radio"
                     value="Yes"
-                    class="input-radio-orderinfo indent"/>
+                    class="input-radio-orderinfo indent"
+                    onclick="stockFunction()"/>
                    Yes
               </label>
               <div class="reveal-input fieldset-inputs" id="stock-amount" style="display:none">
@@ -627,7 +630,8 @@
                  <label id="stock-amount" for="stock-amount" class="stock-label hidden-mobile">Stock</label>
                      <input 
                      type="text"
-                     name="Stock&nbsp;Minimum&nbsp;Amount" 
+                     id="stockamount"
+                     name="" 
                      class="form-control-stock"
                      placeholder="$0.00">                
                </div>
@@ -654,7 +658,8 @@
                     name="Free&nbsp;Freight"
                     type="radio"
                     value="Yes"
-                    class="input-radio-orderinfo indent"/>
+                    class="input-radio-orderinfo indent"
+                    onclick="freefreightFunction()"/>
                   Yes
               </label>
               <div class="reveal-input fieldset-inputs" id="free-amount" style="display:none">
@@ -662,7 +667,8 @@
                 <label id="free-amount" for="free-amount" class="stock-label hidden-mobile">Free Freight</label>
                     <input 
                     type="text"
-                    name="Free&nbsp;Freight&nbsp;Amount" 
+                    id="freefreight"
+                    name="" 
                     class="form-control-stock"
                     placeholder="$0.00">                
               </div>
