@@ -1,12 +1,3 @@
-function addressFunction() {
-  document.getElementById("street-hide").setAttribute("name", "Street");
-  document.getElementById("unit-hide").setAttribute("name", "Unit/Suite"); 
-  document.getElementById("city-hide").setAttribute("name", "City"); 
-  document.getElementById("state-hide").setAttribute("name", "State"); 
-  document.getElementById("zip-hide").setAttribute("name", "Zip");
-  document.getElementById("country-hide").setAttribute("name", "Country"); 
-}
-
 function noaddressFunction() {
   document.getElementById("street-hide").setAttribute("name", "");
   document.getElementById("unit-hide").setAttribute("name", ""); 
@@ -14,6 +5,15 @@ function noaddressFunction() {
   document.getElementById("state-hide").setAttribute("name", ""); 
   document.getElementById("zip-hide").setAttribute("name", "");
   document.getElementById("country-hide").setAttribute("name", ""); 
+}
+
+function addressFunction() {
+  document.getElementById("unit-hide").setAttribute("name", "Unit/Suite"); 
+  document.getElementById("street-hide").setAttribute("name", "Street");  
+  document.getElementById("city-hide").setAttribute("name", "City"); 
+  document.getElementById("state-hide").setAttribute("name", "State"); 
+  document.getElementById("zip-hide").setAttribute("name", "Zip");
+  document.getElementById("country-hide").setAttribute("name", "Country"); 
 }
 
 function carrierFunction() {
