@@ -7,6 +7,9 @@ function addressFunction() {
   document.getElementById("country-hide").setAttribute("name", "Country"); 
 }
 
+function carrierFunction() {
+  document.getElementById("restrictedcarriers").setAttribute("name", "Restricted-Carriers");
+}
 
 function toggle(source) {
     checkboxes = document.getElementsByName('ups');
