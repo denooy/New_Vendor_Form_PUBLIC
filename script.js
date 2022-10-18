@@ -1,11 +1,11 @@
-function noaddressFunction() {
-  document.getElementById("street-hide").setAttribute("name", "");
-  document.getElementById("unit-hide").setAttribute("name", ""); 
-  document.getElementById("city-hide").setAttribute("name", ""); 
-  document.getElementById("state-hide").setAttribute("name", ""); 
-  document.getElementById("zip-hide").setAttribute("name", "");
-  document.getElementById("country-hide").setAttribute("name", ""); 
-}
+// function noaddressFunction() {
+//   document.getElementById("street-hide").setAttribute("name", "");
+//   document.getElementById("unit-hide").setAttribute("name", ""); 
+//   document.getElementById("city-hide").setAttribute("name", ""); 
+//   document.getElementById("state-hide").setAttribute("name", ""); 
+//   document.getElementById("zip-hide").setAttribute("name", "");
+//   document.getElementById("country-hide").setAttribute("name", ""); 
+// }
 
 function addressFunction() {
   document.getElementById("unit-hide").setAttribute("name", "Unit/Suite"); 
