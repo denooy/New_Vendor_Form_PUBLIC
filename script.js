@@ -8,12 +8,12 @@
 // }
 
 function addressFunction() {
-  document.getElementsByClassName("street-hide").setAttribute("name", "Street");
-  document.getElementsByClassName("unit-hide").setAttribute("name", "Unit/Suite");
-  document.getElementsByClassName("city-hide").setAttribute("name", "City"); 
-  document.getElementsByClassName("state-hide").setAttribute("name", "State"); 
-  document.getElementsByClassName("zip-hide").setAttribute("name", "Zip");
-  document.getElementsByClassName("country-hide").setAttribute("name", "Country"); 
+  document.getElementByClassName("street-hide").setAttribute("name", "Street");
+  document.getElementByClassName("unit-hide").setAttribute("name", "Unit/Suite");
+  document.getElementByClassName("city-hide").setAttribute("name", "City"); 
+  document.getElementByClassName("state-hide").setAttribute("name", "State"); 
+  document.getElementByClassName("zip-hide").setAttribute("name", "Zip");
+  document.getElementByClassName("country-hide").setAttribute("name", "Country"); 
 }
 
 function carrierFunction() {
