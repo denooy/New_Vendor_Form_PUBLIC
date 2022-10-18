@@ -8,26 +8,26 @@
 // }
 
 function streetFunction() {
-  document.getElementByClassName("street-hide").setAttribute("name", "Street");
+  document.getElementById("streethide").setAttribute("name", "Street");
 }
 function suiteFunction() {
-  document.getElementByClassName("unit-hide").setAttribute("name", "Unit/Suite");
+  document.getElementById("unithide").setAttribute("name", "Unit/Suite");
 }
 
 function cityFunction() {
-  document.getElementByClassName("city-hide").setAttribute("name", "City"); 
+  document.getElementById("cityhide").setAttribute("name", "City"); 
 }
   
 function stateFunction() {
-  document.getElementByClassName("state-hide").setAttribute("name", "State"); 
+  document.getElementById("statehide").setAttribute("name", "State"); 
 }
   
 function zipFunction() {
-  document.getElementByClassName("zip-hide").setAttribute("name", "Zip");
+  document.getElementById("ziphide").setAttribute("name", "Zip");
 }
   
 function countryFunction() {
-  document.getElementByClassName("country-hide").setAttribute("name", "Country"); 
+  document.getElementById("countryhide").setAttribute("name", "Country"); 
 }
 
 function carrierFunction() {
