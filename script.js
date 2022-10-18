@@ -7,14 +7,15 @@
 //   document.getElementById("country-hide").setAttribute("name", ""); 
 // }
 
-function addressFunction() {
-  document.getElementByClassName("street-hide").setAttribute("name", "Street");
-  document.getElementByClassName("unit-hide").setAttribute("name", "Unit/Suite");
-  document.getElementByClassName("city-hide").setAttribute("name", "City"); 
-  document.getElementByClassName("state-hide").setAttribute("name", "State"); 
-  document.getElementByClassName("zip-hide").setAttribute("name", "Zip");
-  document.getElementByClassName("country-hide").setAttribute("name", "Country"); 
-}
+// function addressFunction() {
+//   document.querySelector("#street-hide, #unit-hide, #city-hide, #state-hide, #zip-hide, #country-hide").setAttribute("name", "Street")
+//   document.getElementByClassName("street-hide").setAttribute("name", "Street");
+//   document.getElementByClassName("unit-hide").setAttribute("name", "Unit/Suite");
+//   document.getElementByClassName("city-hide").setAttribute("name", "City"); 
+//   document.getElementByClassName("state-hide").setAttribute("name", "State"); 
+//   document.getElementByClassName("zip-hide").setAttribute("name", "Zip");
+//   document.getElementByClassName("country-hide").setAttribute("name", "Country"); 
+// }
 
 function carrierFunction() {
   document.getElementById("restrictedcarriers").setAttribute("name", "Restricted-Carriers");
@@ -76,6 +77,26 @@ function toggle(source) {
   	}
   }
   
+  $(document).ready(function(){
+    $("#yesCheck").click(function(){
+      $("#street-hide").attr("name", "Street");
+    });
+    $("#yesCheck").click(function(){
+      $("#unit-hide").attr("name", "Suite/Unit");
+    });
+    $("#yesCheck").click(function(){
+      $("#city-hide").attr("name", "City");
+    });
+    $("#yesCheck").click(function(){
+      $("#state-hide").attr("name", "State");
+    });
+    $("#yesCheck").click(function(){
+      $("#zip-hide").attr("name", "Zip");
+    });
+    $("#yesCheck").click(function(){
+      $("#country-hide").attr("name", "Country");
+    });
+  });
 
   $(document).ready(function() {    
     $("#canadaship").click(function(){
