@@ -7,28 +7,28 @@
 //   document.getElementById("country-hide").setAttribute("name", ""); 
 // }
 
-function streetFunction() {
-  document.getElementById("streethide").setAttribute("name", "Street");
-}
-function suiteFunction() {
-  document.getElementById("unithide").setAttribute("name", "Unit/Suite");
-}
+// function streetFunction() {
+//   document.getElementById("streethide").setAttribute("name", "Street");
+// }
+// function suiteFunction() {
+//   document.getElementById("unithide").setAttribute("name", "Unit/Suite");
+// }
 
-function cityFunction() {
-  document.getElementById("cityhide").setAttribute("name", "City"); 
-}
+// function cityFunction() {
+//   document.getElementById("cityhide").setAttribute("name", "City"); 
+// }
   
-function stateFunction() {
-  document.getElementById("statehide").setAttribute("name", "State"); 
-}
+// function stateFunction() {
+//   document.getElementById("statehide").setAttribute("name", "State"); 
+// }
   
-function zipFunction() {
-  document.getElementById("ziphide").setAttribute("name", "Zip");
-}
+// function zipFunction() {
+//   document.getElementById("ziphide").setAttribute("name", "Zip");
+// }
   
-function countryFunction() {
-  document.getElementById("countryhide").setAttribute("name", "Country"); 
-}
+// function countryFunction() {
+//   document.getElementById("countryhide").setAttribute("name", "Country"); 
+// }
 
 function carrierFunction() {
   document.getElementById("restrictedcarriers").setAttribute("name", "Restricted-Carriers");
@@ -91,27 +91,28 @@ function toggle(source) {
   }
   
   // $(document).ready(function(){
-  //   $("#yesCheck").click(function(){
-  //     $("#street-hide").attr("name", "Street");
-  //   });
-  //   $("#yesCheck").click(function(){
-  //     $("#unit-hide").attr("name", "Suite/Unit");
-  //   });
-  //   $("#yesCheck").click(function(){
-  //     $("#city-hide").attr("name", "City");
-  //   });
-  //   $("#yesCheck").click(function(){
-  //     $("#state-hide").attr("name", "State");
-  //   });
-  //   $("#yesCheck").click(function(){
-  //     $("#zip-hide").attr("name", "Zip");
-  //   });
-  //   $("#yesCheck").click(function(){
-  //     $("#country-hide").attr("name", "Country");
-  //   });
+
   // });
 
-  $(document).ready(function() {    
+  $(document).ready(function() {
+        $("#yesCheck").click(function(){
+      $("#streethide").attr("name", "Street");
+    });
+    $("#yesCheck").click(function(){
+      $("#unithide").attr("name", "Suite/Unit");
+    });
+    $("#yesCheck").click(function(){
+      $("#cityhide").attr("name", "City");
+    });
+    $("#yesCheck").click(function(){
+      $("#statehide").attr("name", "State");
+    });
+    $("#yesCheck").click(function(){
+      $("#ziphide").attr("name", "Zip");
+    });
+    $("#yesCheck").click(function(){
+      $("#countryhide").attr("name", "Country");
+    });    
     $("#canadaship").click(function(){
       $("#canada").slideToggle("fast");
   });
