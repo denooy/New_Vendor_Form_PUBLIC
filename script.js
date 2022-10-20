@@ -1,3 +1,13 @@
+function addressFunction() {
+  document.getElementById("street-hide").setAttribute("name", "-Street");
+  document.getElementById("unit-hide").setAttribute("name", "-Unit/Suite"); 
+  document.getElementById("city-hide").setAttribute("name", "-City"); 
+  document.getElementById("state-hide").setAttribute("name", "-State"); 
+  document.getElementById("zip-hide").setAttribute("name", "-Zip");
+  document.getElementById("country-hide").setAttribute("name", "-Country");
+   
+}
+
 function carrierFunction() {
   document.getElementById("restrictedcarriers").setAttribute("name", "Restricted-Carriers");
 }
@@ -58,24 +68,6 @@ function toggle(source) {
   	}
   }
   
-    // $("#yesCheck").click(function(){
-    //   $("#streethide").attr("name", "Street");
-    // });
-    // $("#yesCheck").click(function(){
-    //   $("#unithide").attr("name", "Suite/Unit");
-    // });
-    // $("#yesCheck").click(function(){
-    //   $("#cityhide").attr("name", "City");
-    // });
-    // $("#yesCheck").click(function(){
-    //   $("#statehide").attr("name", "State");
-    // });
-    // $("#yesCheck").click(function(){
-    //   $("#ziphide").attr("name", "Zip");
-    // });
-    // $("#yesCheck").click(function(){
-    //   $("#countryhide").attr("name", "Country");
-    // });
   $(document).ready(function() {    
     $("#canadaship").click(function(){
       $("#canada").slideToggle("fast");
@@ -120,58 +112,3 @@ function toggle(source) {
     $("#dropship-amount").show('fast');
   });
 });
-
-function addressFunction() {
-  document.getElementById("street-hide").setAttribute("name", "Street2");
-  document.getElementById("unit-hide").setAttribute("name", "Unit/Suite2"); 
-  document.getElementById("city-hide").setAttribute("name", "City2"); 
-  document.getElementById("state-hide").setAttribute("name", "State2"); 
-  document.getElementById("zip-hide").setAttribute("name", "Zip2");
-  document.getElementById("country-hide").setAttribute("name", "Country2"); 
-}
-// $(document).ready(function(){
-//   $("input[name='warehouse']").live("change", function(){
-//      if ($(this).val() == "B") {
-//       $("input#street-hide").attr("name", "Street");               
-//       $("input#unit-hide").attr("name", "Unit");             
-//       $("input#city-hide").attr("name", "City");
-//       $("input#state-hide").attr("name", "State");
-//       $("input#zip-hide").attr("name", "Zip");
-//       $("input#country-hide").attr("name", "Country");                     
-//       }
-//       else if ($(this).val() == "A") {
-//         $("input#street-hide").attr("name", "");               
-//         $("input#unit-hide").attr("name", "");             
-//         $("input#city-hide").attr("name", "");
-//         $("input#state-hide").attr("name", "");
-//         $("input#zip-hide").attr("name", "");
-//         $("input#country-hide").attr("name", "");                    
-//       }
-//   }); 
-// });
-
-
-
-
-// function streetFunction() {
-//   document.getElementById("streethide").setAttribute("name", "Street");
-// }
-// function suiteFunction() {
-//   document.getElementById("unithide").setAttribute("name", "Unit/Suite");
-// }
-
-// function cityFunction() {
-//   document.getElementById("cityhide").setAttribute("name", "City"); 
-// }
-  
-// function stateFunction() {
-//   document.getElementById("statehide").setAttribute("name", "State"); 
-// }
-  
-// function zipFunction() {
-//   document.getElementById("ziphide").setAttribute("name", "Zip");
-// }
-  
-// function countryFunction() {
-//   document.getElementById("countryhide").setAttribute("name", "Country"); 
-// }
