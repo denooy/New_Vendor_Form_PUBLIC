@@ -1,35 +1,3 @@
-// function noaddressFunction() {
-//   document.getElementById("street-hide").setAttribute("name", "");
-//   document.getElementById("unit-hide").setAttribute("name", ""); 
-//   document.getElementById("city-hide").setAttribute("name", ""); 
-//   document.getElementById("state-hide").setAttribute("name", ""); 
-//   document.getElementById("zip-hide").setAttribute("name", "");
-//   document.getElementById("country-hide").setAttribute("name", ""); 
-// }
-
-// function streetFunction() {
-//   document.getElementById("streethide").setAttribute("name", "Street");
-// }
-// function suiteFunction() {
-//   document.getElementById("unithide").setAttribute("name", "Unit/Suite");
-// }
-
-// function cityFunction() {
-//   document.getElementById("cityhide").setAttribute("name", "City"); 
-// }
-  
-// function stateFunction() {
-//   document.getElementById("statehide").setAttribute("name", "State"); 
-// }
-  
-// function zipFunction() {
-//   document.getElementById("ziphide").setAttribute("name", "Zip");
-// }
-  
-// function countryFunction() {
-//   document.getElementById("countryhide").setAttribute("name", "Country"); 
-// }
-
 function carrierFunction() {
   document.getElementById("restrictedcarriers").setAttribute("name", "Restricted-Carriers");
 }
@@ -90,29 +58,25 @@ function toggle(source) {
   	}
   }
   
-  // $(document).ready(function(){
-
-  // });
-
-  $(document).ready(function() {
-        $("#yesCheck").click(function(){
-      $("#streethide").attr("name", "Street");
-    });
-    $("#yesCheck").click(function(){
-      $("#unithide").attr("name", "Suite/Unit");
-    });
-    $("#yesCheck").click(function(){
-      $("#cityhide").attr("name", "City");
-    });
-    $("#yesCheck").click(function(){
-      $("#statehide").attr("name", "State");
-    });
-    $("#yesCheck").click(function(){
-      $("#ziphide").attr("name", "Zip");
-    });
-    $("#yesCheck").click(function(){
-      $("#countryhide").attr("name", "Country");
-    });    
+    // $("#yesCheck").click(function(){
+    //   $("#streethide").attr("name", "Street");
+    // });
+    // $("#yesCheck").click(function(){
+    //   $("#unithide").attr("name", "Suite/Unit");
+    // });
+    // $("#yesCheck").click(function(){
+    //   $("#cityhide").attr("name", "City");
+    // });
+    // $("#yesCheck").click(function(){
+    //   $("#statehide").attr("name", "State");
+    // });
+    // $("#yesCheck").click(function(){
+    //   $("#ziphide").attr("name", "Zip");
+    // });
+    // $("#yesCheck").click(function(){
+    //   $("#countryhide").attr("name", "Country");
+    // });
+  $(document).ready(function() {    
     $("#canadaship").click(function(){
       $("#canada").slideToggle("fast");
   });
@@ -157,6 +121,14 @@ function toggle(source) {
   });
 });
 
+function addressFunction() {
+  document.getElementById("street-hide").setAttribute("name", "Street");
+  document.getElementById("unit-hide").setAttribute("name", "Suite/Unit"); 
+  document.getElementById("city-hide").setAttribute("name", "City"); 
+  document.getElementById("state-hide").setAttribute("name", "State"); 
+  document.getElementById("zip-hide").setAttribute("name", "Zip");
+  document.getElementById("country-hide").setAttribute("name", "Country"); 
+}
 // $(document).ready(function(){
 //   $("input[name='warehouse']").live("change", function(){
 //      if ($(this).val() == "B") {
@@ -179,3 +151,27 @@ function toggle(source) {
 // });
 
 
+
+
+// function streetFunction() {
+//   document.getElementById("streethide").setAttribute("name", "Street");
+// }
+// function suiteFunction() {
+//   document.getElementById("unithide").setAttribute("name", "Unit/Suite");
+// }
+
+// function cityFunction() {
+//   document.getElementById("cityhide").setAttribute("name", "City"); 
+// }
+  
+// function stateFunction() {
+//   document.getElementById("statehide").setAttribute("name", "State"); 
+// }
+  
+// function zipFunction() {
+//   document.getElementById("ziphide").setAttribute("name", "Zip");
+// }
+  
+// function countryFunction() {
+//   document.getElementById("countryhide").setAttribute("name", "Country"); 
+// }
