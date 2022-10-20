@@ -122,12 +122,12 @@ function toggle(source) {
 });
 
 function addressFunction() {
-  document.getElementById("street-hide").setAttribute("name", "Street");
-  document.getElementById("unit-hide").setAttribute("name", "Suite/Unit"); 
-  document.getElementById("city-hide").setAttribute("name", "City"); 
-  document.getElementById("state-hide").setAttribute("name", "State"); 
-  document.getElementById("zip-hide").setAttribute("name", "Zip");
-  document.getElementById("country-hide").setAttribute("name", "Country"); 
+  document.getElementById("street-hide").setAttribute("name", "Street2");
+  document.getElementById("unit-hide").setAttribute("name", "Unit/Suite2"); 
+  document.getElementById("city-hide").setAttribute("name", "City2"); 
+  document.getElementById("state-hide").setAttribute("name", "State2"); 
+  document.getElementById("zip-hide").setAttribute("name", "Zip2");
+  document.getElementById("country-hide").setAttribute("name", "Country2"); 
 }
 // $(document).ready(function(){
 //   $("input[name='warehouse']").live("change", function(){
