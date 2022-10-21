@@ -115,11 +115,11 @@ input[type="radio"] {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   }
   
-  /* .clue {
+  .clue {
     margin-left: 0.25rem;
     font-size: 0.9rem;
     color: #e4e4e4;
-  } */
+  }
   
   .text-center {
     text-align: center;
@@ -159,6 +159,7 @@ input[type="radio"] {
     transform: translateY(-35px);
 }
 
+
 .name-email-street {
     width: 100%;
     display: flex;
@@ -189,6 +190,7 @@ fieldset {
   width: 100%;
 }
 
+
 .vendor-group {
     margin: 0 auto .5rem auto;
     padding: 0.125rem;
@@ -204,6 +206,7 @@ fieldset {
   .vendor-group-stock {
     display: flex;
     flex-direction: row;
+
   }
 
   .international {
@@ -245,7 +248,7 @@ fieldset {
     padding-bottom: 1.5rem;
   }
   
-  .addlocation {
+  .location2 {
       padding-top: 40px;
   }
   .shipping-group {
@@ -255,6 +258,7 @@ fieldset {
   .fieldset-header {
       margin-left: .625rem;
   }
+
   
   .form-control {
     display: block;
@@ -378,6 +382,8 @@ button {
 /* BEGIN TOP HEADER STYLES */
 
 .supercontainer, .preheader {
+
+
   width: 100%;
   float: left;
   position: relative;
@@ -385,7 +391,8 @@ button {
   height: 120px;
   transform: translateY(-50px);
   background: url('https://www.trick-tools.com/static/images/new/header-metal-bg.jpg') center top no-repeat #000;
-  border-bottom: 1px solid #f2b71d;  
+  border-bottom: 1px solid #f2b71d;
+  
   }
   
   .precontainer {
@@ -401,7 +408,8 @@ button {
   background: url('https://www.trick-tools.com/static/images/new/no-junk-logo-screened.png') right center no-repeat transparent;
   background-size: 28%;
   }
-     
+  
+   
   .ttlink {
       line-height: 1;
       box-sizing: border-box;
@@ -411,8 +419,10 @@ button {
   }
 
 #logo img {
+    /* width: 100%; */
     max-width: 400px;
-    min-width: 300px; 
+    min-width: 300px;
+ 
     }
 
 a img {
@@ -443,13 +453,16 @@ img {
   form {
     padding: 2.5rem;
   }
+
 }
 
 @media (max-width: 1405px) {
-  .containeryes {
+  .precontainer {
     background: none;
     min-width: 100% !important;
+
   }
+
 }
 
 @media (max-width: 1405px) {
@@ -468,7 +481,7 @@ img {
     width: 400px;
     float: left;
     margin-top: 19px;
-  }
+}
 }
 
 @media (max-width: 768px) {
