@@ -37,14 +37,14 @@ function freefreightFunction() {
 }
 
 function toggle(source) {
-    checkboxes = document.getElementsByName('ups');
+    checkboxes = document.getElementsByName('UPS-Account-E66857');
     for(var i=0, n=checkboxes.length;i<n;i++) {
       checkboxes[i].checked = source.checked;
     }
   }
 
   function toggle(source) {
-    checkboxes = document.getElementsByName('ups');
+    checkboxes = document.getElementsByName('UPS');
     for(var i=0, n=checkboxes.length;i<n;i++) {
       checkboxes[i].checked = source.checked;
     }
