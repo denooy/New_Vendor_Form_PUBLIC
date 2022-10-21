@@ -11,10 +11,10 @@
   </head>
 
 <body>  
-  <div class="supercontainer headeryes">
-    <div class="containeryes">        
+  <div class="supercontainer preheader">
+    <div class="precontainer">        
       <div id="logo">
-        <a class="ayes" href="https://www.trick-tools.com/"><img src="https://www.trick-tools.com/static/images/new/trick-tools-logo5.png" alt="Trick Tools - High Performance Tools for the Fabricator" title="Trick Tools - High Performance Tools for the Fabricator"></a>
+        <a class="ttlink" href="https://www.trick-tools.com/"><img src="https://www.trick-tools.com/static/images/new/trick-tools-logo5.png" alt="Trick Tools - High Performance Tools for the Fabricator" title="Trick Tools - High Performance Tools for the Fabricator"></a>
     </div>
     </div>
 
@@ -199,12 +199,12 @@
             </div>            
             <div class="name-email-street">
                 <div class="vendor-group right-column">
-                <label id="name-label" for="zip">Zip Code</label>
+                <label id="name-label" for="zip">Zip/Postal Code</label>
                  <input 
                      type="text" 
                      name="Zip" 
                      class="form-control" 
-                     pattern="[0-9]{5}" 
+                     maxlength="10"
                      required>         
                 </div>
                 <div class="vendor-group left-column">
@@ -234,14 +234,15 @@
                     </div>
                 </div>            
             <div class="vendor-group">
-                <p class="location2">Do you ship from an additional location?</p>
+                <p class="addlocation">Do you ship from an additional location?</p>
                  <label>
                     <input 
                       name="***Additional&nbsp;Warehouse***"
                       id="noCheck"
                       type="radio"
                       value="No"
-                      class="input-radio"                      
+                      class="input-radio"
+                      onclick="noaddressFunction()"                      
                       checked/>
                      No
                 </label>
@@ -368,13 +369,13 @@
                     </div>            
                           <div class="name-email-street">
                               <div class="vendor-group right-column">
-                              <label id="name-label" for="zipname">Zip Code</label>
+                              <label id="name-label" for="zipname">Zip/Postal Code</label>
                               <input 
                                   type="text" 
                                   id="zip-hide"
                                   name="" 
                                   class="form-control" 
-                                  pattern="[0-9]{5}" 
+                                  maxlength="10"
                                   >         
                               </div>
                               <div class="vendor-group left-column">
@@ -453,7 +454,7 @@
                 type="checkbox"
                 class="input-checkbox"
                 onClick="toggle(this)" 
-              />Dealer's UPS account</label>
+              />Trick-Tools' UPS account</label>
               <label
                 ><input
                   name="ups"
@@ -489,7 +490,7 @@
                     type="checkbox"
                     class="input-checkbox"
                     onClick="javascript:uncheckScale(this); javascript:uncheckCarriers(this);"
-                    />Dealer may arrange freight & send BOL</label
+                    />Trick-Tools may arrange freight & send BOL</label
                 >
             <div id="arrangefreight" style="display: none" class="vendor-group reveal-if-active">
                 <label
@@ -686,17 +687,22 @@
           />
           <div class="name-email-street">
             <div class="dealer-margin">
-              <label id="name-label" for="percentage">Dealer Margin</label>
+              <label id="name-label" for="percentage">Trick-Tools' Margin</label>
               <select id="percentage" name="Margin&nbsp;Percentage" class="form-control-order">  
                 <option value="">Select One</option>
-                <option value="15%">15%</option>
-                <option value="20%">20%</option>
-                <option value="25%">25%</option>
-                <option value="30%">30%</option>
-                <option value="35%">35%</option>
-                <option value="40%">40%</option>
-                <option value="45%">45%</option>              
+                <option value="75%">75%</option>
+                <option value="70%">70%</option>
+                <option value="65%">65%</option>
+                <option value="60%">60%</option>
+                <option value="55%">55%</option>     
                 <option value="50%">50%</option>
+                <option value="45%">45%</option>
+                <option value="40%">40%</option>
+                <option value="35%">35%</option>
+                <option value="30%">30%</option>
+                <option value="25%">25%</option>
+                <option value="20%">20%</option>
+                <option value="15%">15%</option>
                 <option value="Varies&nbsp;See&nbsp;Notes"> Varies, See Notes</option>
                
               </optgroup>
