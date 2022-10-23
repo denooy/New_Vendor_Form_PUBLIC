@@ -5,20 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js" async="false"></script>
+
     <title>New Vendor Form</title>
   </head>
 
 <body>  
-  <div class="supercontainer preheader">
+    <div class="supercontainer preheader">
     <div class="precontainer">        
       <div id="logo">
         <a class="ttlink" href="https://www.trick-tools.com/"><img src="https://www.trick-tools.com/static/images/new/trick-tools-logo5.png" alt="Trick Tools - High Performance Tools for the Fabricator" title="Trick Tools - High Performance Tools for the Fabricator"></a>
     </div>
     </div>
-
 </div>
+
      <div class="container">
         <header class="header">
             <h1 class="text-center">New Vendor Form</h1>
@@ -39,7 +38,7 @@
                     name="Company&nbsp;Name" 
                     class="form-control" 
                     required>                
-               </div>
+               </div>               
                 <div class="vendor-group left-column">
                 <label id="name-label" for="company-name">Brand(s) Represented</label>
                     <input 
@@ -86,13 +85,13 @@
                     class="form-control"
                     required>                
             </div>
-              </div> 
+              </div>                             
               <input    
-            id="hidden"
-            name="******ADDRESS&nbsp;INFORMATION******"
-            type="hidden"
-            class="hidden"
-            />
+                id="hidden"
+                name="******ADDRESS&nbsp;INFORMATION******"
+                type="hidden"
+                class="hidden"
+                />
               <div class="name-email-street contact">
                <div class="vendor-group right-column">
                 <label id="name-label" for="address1-name">Street Address</label>
@@ -109,7 +108,7 @@
                     name="Unit/Suite" 
                     class="form-control">                
                    </div>
-                </div>
+                </div>                                
                 <div class="name-email-street">
                     <div class="vendor-group right-column">
                         <label id="name-label" for="city">City</label>
@@ -118,8 +117,8 @@
                             name="City" 
                             class="form-control" 
                             required>                
-                     </div>
-            <div class="vendor-group left-column">
+                     </div>          
+            <div class="vendor-group left-column">              
                 <label id="name-label" for="state">State </label>
                 <select id="state" name="State" class="form-control">
                     <option value="">Select One</option>
@@ -196,8 +195,8 @@
                         <option value="INTL">International</option>
                 </select>
                 </div>
-            </div>            
-            <div class="name-email-street">
+            </div>   
+            <div class="name-email-street">              
                 <div class="vendor-group right-column">
                 <label id="name-label" for="zip">Zip/Postal Code</label>
                  <input 
@@ -232,7 +231,7 @@
                         </optgroup>
                     </select>
                     </div>
-                </div>            
+                </div>                                            
             <div class="vendor-group">
                 <p class="location2">Do you ship from an additional location?</p>
                  <label>
@@ -288,7 +287,7 @@
                             name="" 
                             class="form-control" 
                             >                
-                    </div>
+                    </div>                    
                     <div class="vendor-group left-column">
                         <label id="name-label" for="statename">State</label>
                         <select id="state-hide" name="" class="form-control">
@@ -513,7 +512,7 @@
                   Do not use certain carriers
             </label>
             </div>
-          </div>
+          </div>          
 <!--------------------- BEGIN REVEAL IF ACTIVE HTML --------------------->
                   <div id="approved" style="display: none" class="vendor-group reveal-if-active">
                       <label id="approvedcarriers" for="carriers">Restricted Carriers</label>
@@ -543,8 +542,8 @@
                   <input id="txtPassportNumber" type="file" accept=".csv, .xml, .pdf, .doc, .docx" name="Flatbed&nbsp;Only&nbsp;Products" multiple>
                   </div>
 <!--------------------- END REVEAL IF ACTIVE HTML --------------------->
-            </fieldset>
-        <fieldset><legend>Order Information</legend>
+            </fieldset>            
+        <fieldset><legend>Order Information</legend>          
           <input    
           id="hidden"
           name="*****ORDER&nbsp;INFORMATION*****"
@@ -561,7 +560,7 @@
                     placeholder="orders@vendor.com">
                
             </div>
-          </div>
+          </div>          
           <br>
           <div id="dropship" style="display: none" class="name-email-street reveal-if-active vendor-group" >
             
@@ -595,8 +594,10 @@
                            type="text"
                            id="dropshipamount"
                            name=""
+                           data-type="currency"
                            class="form-control-stock" 
-                           placeholder="$0.00">                
+                           placeholder="$0.00"
+                           pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$">                
                  </div>
              </div>
              </div>
@@ -632,8 +633,10 @@
                      type="text"
                      id="stockamount"
                      name="" 
+                     data-type="currency"
                      class="form-control-stock"
-                     placeholder="$0.00">                
+                     placeholder="$0.00"
+                     pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$">                
                </div>
              </div>
             </div>
@@ -659,7 +662,8 @@
                     type="radio"
                     value="Yes"
                     class="input-radio-orderinfo indent"
-                    onclick="freefreightFunction()"/>
+                    onclick="freefreightFunction()"
+                    />
                   Yes
               </label>
               <div class="reveal-input fieldset-inputs" id="free-amount" style="display:none">
@@ -669,8 +673,10 @@
                     type="text"
                     id="freefreight"
                     name="" 
+                    data-type="currency"
                     class="form-control-stock"
-                    placeholder="$0.00">                
+                    placeholder="$0.00"
+                    pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$">                
               </div>
             </div>
             </div>
@@ -745,4 +751,6 @@
       </div>
      
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js" async="false"></script>
 </html>
