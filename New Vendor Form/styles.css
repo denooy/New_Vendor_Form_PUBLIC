@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Open+Sans:wght@500&display=swap');
+
+:root {
+  --color-black: black;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-white: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-black);
+    background-image: linear-gradient(
+        115deg,
+        rgba(15, 15, 40, 0.8),
+        rgba(4, 4, 23, 0.7)
+      ),
+      url(https://www.trick-tools.com/static/images/slides/slide-3-jonweld.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left; 
+  }
+
+
+  h1 {
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+     text-align: center;
+  }
+  
+  p {
+    font-size: 1.125rem;
+  }
+  
+  h1,
+  p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    min-width: 200px;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  button,
+  select,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+input[type="checkbox"] {
+  accent-color: rgba(27, 27, 50, 0.8);
+}
+
+input[type="radio"] {
+  accent-color: rgba(27, 27, 100);
+}
+
+  button {
+    border: none;
+    text-align: center;
+  }
+
+  button:hover {
+    opacity: .9;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 3.125rem auto 3.125rem auto;
+  }
+  
+  
+  .header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+  }
+  
+  .description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  .clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  legend {
+      font-size: 1.6rem;
+      text-align: center; 
+      margin: 0 auto;    
+  }
+
+  .legend {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: lighter;
+  }
+  
+  /* form */
+  
+  form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+
+  .formclass {
+    border-radius: 1.5rem;
+  }
+  
+  .city-state-zip {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.reveal-if-active { 
+  animation: fadeIn 1s;
+}
+
+.reveal-if-activea { 
+    animation: fadeIn 1s;
+    transform: translateY(-35px);
+}
+
+
+.name-email-street {
+    width: 100%;
+    display: flex;
+  }
+
+  .reveal-input {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: middle;
+  }
+
+.contact {
+    padding-top: 40px;
+}
+
+fieldset {
+    margin: 3rem 0;
+}
+
+.firstfieldset {
+  margin-top: 1rem;
+}
+
+.div-margin {
+  margin: 2rem 0;
+  padding: 0.125rem;
+  width: 100%;
+}
+
+
+.vendor-group {
+    margin: 0 auto .5rem auto;
+    padding: 0.125rem;
+    width: 100%;
+  }
+
+  .vendor-groupdrop {
+    margin: 0 auto 0 auto;
+    padding: 0.125rem;
+    width: 100%;
+  }
+
+  .vendor-group-stock {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .international {
+    color:#666c72;
+  }
+
+  .ds-min {
+    margin-bottom: .5rem;
+  }
+
+  .indent {
+    padding-left: 1rem;
+  }
+
+.stock-label {
+  margin-right: 1em;
+  margin-top: 4px;
+  text-align: start;
+  clear: both;
+  float: left;
+  vertical-align: middle;
+}
+  
+  .vertical-align {
+    transform: translateY(.75rem);
+  }
+
+  .left-column {
+    padding-left: .5rem;
+
+  }
+
+  .right-column {
+    padding-right: .5rem;
+  }
+
+  .dealer-margin {
+    width: 50%;
+    padding-bottom: 1.5rem;
+  }
+  
+  .location2 {
+      padding-top: 40px;
+  }
+  .shipping-group {
+    margin: 0 auto;
+      }
+
+  .fieldset-header {
+      margin-left: .625rem;
+  }
+
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form-control-order {
+    display: block;
+    width: 96%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form-control-stock {
+    display: inline;
+    min-width: 10%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  
+  .form-control:focus, .form-control-stock:focus, .form-control-order:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .input-radio,
+  .input-checkbox {
+    display: inline-block;
+    margin-right: 0.55rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+  }
+
+  .input-radio-orderinfo {
+    display: inline-block;
+    margin-right: 0.55rem;
+    height: 2.375rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+  }
+
+.indent {
+  margin-left: 14px;
+}
+
+
+  .radio-text {
+    display: inline-block;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  } 
+
+  textarea:focus::placeholder {
+    color: transparent;
+  } 
+  
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+  
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+  }
+
+  @media (prefers-reduced-motion: no-preference) { * {
+  scroll-behavior: smooth;
+}
+}
+
+
+a:hover {
+  color: rgb(219, 215, 215);
+}
+
+button {
+  display: block;
+  width: 18%;
+  margin-top: 1.5rem;
+  padding: 0.65rem;
+  background: rgb(227,113,20);
+  color: inherit;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: right;
+  transform: translateY(25px);
+
+}
+
+/* BEGIN TOP HEADER STYLES */
+
+.supercontainer, .preheader {
+
+
+  width: 100%;
+  float: left;
+  position: relative;
+  top: 0;
+  height: 120px;
+  transform: translateY(-50px);
+  background: url('https://www.trick-tools.com/static/images/new/header-metal-bg.jpg') center top no-repeat #000;
+  border-bottom: 1px solid #f2b71d;
+  
+  }
+  
+  .precontainer {
+  line-height: 1;
+  color: #000000;
+  position: relative;
+  width: 40%;
+  max-width: 40%;
+  min-width: 5%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: url('https://www.trick-tools.com/static/images/new/no-junk-logo-screened.png') right center no-repeat transparent;
+  background-size: 28%;
+  }
+  
+   
+  .ttlink {
+      line-height: 1;
+      box-sizing: border-box;
+      outline: 0;
+      color: #000;
+      text-decoration: none;
+  }
+
+#logo img {
+    /* width: 100%; */
+    max-width: 400px;
+    min-width: 300px;
+ 
+    }
+
+a img {
+    border: 0 !important;
+}
+img {
+    border: 0 !important;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+
+}
+
+@media (max-width: 1405px) {
+  .precontainer {
+    background: none;
+    min-width: 100% !important;
+
+  }
+
+}
+
+@media (max-width: 1405px) {
+  #logo {
+    max-width: 400px;
+    min-width: 10px;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+@media (min-width: 1405px) {
+  #logo {
+    width: 400px;
+    float: left;
+    margin-top: 19px;
+}
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+   .form-control-stock {
+    max-width: 65%;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
